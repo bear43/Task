@@ -68,6 +68,12 @@ public class t6
         return null;
     }
 
+    static Integer[] makeVertexByTurn_Object(HorseTurns turn, int[][] pitch, int pitchSize, Integer[] startPoint)
+    {
+        int[] newCoords = makeVertexByTurn(turn, pitch, pitchSize, new int[] { startPoint[0], startPoint[1] });
+        return newCoords == null ? null : new Integer[] { newCoords[0], newCoords[1] };
+    }
+
     private static void clear(int[][] arr, int length)
     {
         for(int i = 0; i < length; i++)
