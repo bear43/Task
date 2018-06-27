@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class t8
+class t8
 {
     private static final byte TABLE_SIZE = 8;//8x8
     private static final byte LOW_CASE_ALPHABET_UNICODE_OFFSET = 10;

@@ -17,7 +17,7 @@ public class t6
         LEFT_BACK
     }
 
-    static int[] getNewCoord(HorseTurns turn, int[] startPosition)
+    private static int[] getNewCoord(HorseTurns turn, int[] startPosition)
     {
         int[] newCoords = new int[2];
         switch (turn)
@@ -58,7 +58,7 @@ public class t6
         return newCoords;
     }
 
-    static int[] makeVertexByTurn(HorseTurns turn, int[][] pitch, int pitchSize, int[] startPoint)
+    private static int[] makeVertexByTurn(HorseTurns turn, int[][] pitch, int pitchSize, int[] startPoint)
     {
         int[] newCoords = getNewCoord(turn, startPoint);
         if(newCoords[0] >= 0 && newCoords[0] < pitchSize && newCoords[1] >= 0 && newCoords[1] < pitchSize)

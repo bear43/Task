@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class t7
+class t7
 {
     static void run() throws Exception
     {
