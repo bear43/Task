@@ -14,6 +14,14 @@ class t9
             }
         }
     }
+    static void makeFloydEx(int[][] table, int verticesCount)
+    {
+        for(int k = 0; k < verticesCount; k++)
+            for(int i = 0; i < verticesCount; i++)
+                for(int j = 0; j < verticesCount; j++)
+                    if(table[i][k] < Integer.MAX_VALUE && table[k][j] < Integer.MAX_VALUE)
+                        if (table[i][k] + table[k][j] < table[i][j]) table[i][j] = table[i][k] + table[k][j];
+    }
     static void run() throws Exception
     {
         File file = new File();

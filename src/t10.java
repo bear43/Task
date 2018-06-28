@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class t10
 {
     static void run() throws Exception
